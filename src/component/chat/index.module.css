@@ -1,3 +1,11 @@
+.mainContent {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
 .headerContent {
     display: flex;
     position: relative;
@@ -45,10 +53,12 @@
 }
 
 .contentChat {
+    display: flex;
     flex-direction: column;
     overflow-y: auto;
     transition: all 0.3s ease;
-    padding: 0 10px
+    padding: 0 10px 50px 10px;
+    height: 100%;
 }
 
 .bottomContainer {

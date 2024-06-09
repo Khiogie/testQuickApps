@@ -73,7 +73,7 @@ export function RenderChat(props: Props) {
     }
     
     return (
-        <div className={"column"}>
+        <div className={styles.mainContent}>
             {renderHeaderChat()}
             {renderBodyChat()}
             {renderBottomChat()}

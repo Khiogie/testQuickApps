@@ -97,5 +97,11 @@ export const dummyChat = [
     senderId: "2",
     senderName: "Mary Hilda",
     text: "Sure thing, Claren"
-  }
+  },
+  {
+    messageId: "4",
+    senderId: "2",
+    senderName: "Mary Hilda",
+    text: "Sure thing, Claren"
+  },
 ]
