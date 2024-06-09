@@ -41,14 +41,13 @@ const TaskItem: React.FC<IProps> = ({
 	const [isMoreOptions, setIsMoreOptions] = useState(false);
 
 	const ref = useRef<HTMLDivElement>(null);
-	const inputRef = useRef<HTMLInputElement>(null);
+	const inputRef = useRef(null);
 
 	const handleFilterOpening = () => {
 		setIsOpen((prev) => !prev);
 	};
 
 	useEffect(function() {
-		console.log("startdate: ", data.date);
 		if(data.date.length != 0) {
 			setStartDate(new Date(data.date * 1000));
 		} 

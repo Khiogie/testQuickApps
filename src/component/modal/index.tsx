@@ -14,6 +14,7 @@ export function ModalQuickTabs(props: Props) {
     useEffect(() => {
     
         function handleClickOutside(event: any) {
+            //@ts-ignore
             if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
                 props.onClose();
             }

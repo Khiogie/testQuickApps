@@ -21,6 +21,7 @@ export function FloatingGroupButton () {
     useEffect(() => {
     
         function handleClickOutside(event: any) {
+            //@ts-ignore
             if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
                 setIsActive(false);
                 setIsHiddenTabs(false);
@@ -195,10 +196,8 @@ export function FloatingGroupButton () {
                                     style={{
                                         backgroundColor: changeColorBackgroundIndicator(event),
                                     }}>
-                                    <Image 
+                                    <img 
                                         src={checkIconList(event, index)} 
-                                        width={30}
-                                        height={30}
                                         alt={"icon"}
                                         style={{
                                             width: "30.22px", 
