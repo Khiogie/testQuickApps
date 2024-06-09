@@ -1,0 +1,80 @@
+.containerButtonFloat {	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position:relative;
+	border-radius:50%;
+	background-color: transparent;
+	transition: all .3s ease;
+}
+
+.buttonFloat{
+	transition: all 0.1s ease;
+	cursor: pointer;
+	border-radius: 50%;
+	outline: 0;
+	border: 0;
+}
+
+.groupIconFloat{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	transition: all .3s ease;
+}
+
+.containerSubButton {
+	display: flex;
+	position: fixed;
+	margin-top: -144px;
+	transition: all .2s ease;
+}
+
+.subButton {
+	position: absolute;
+	display: flex;
+	float: left;
+	flex-direction: column;
+    align-items: center; justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+	cursor: pointer;
+	
+}
+
+.subButton span {
+	margin: 10px;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+.subButton img {
+	width: 67px;
+	height: 67px;
+	transition: all .2s ease;
+}
+
+.panel {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 50vw;
+	height: auto;
+	text-align: left;
+	transform-origin: 100% 100%;
+	margin-bottom: 120px;
+
+}
+
+.panel .body {
+	transition: all .2s ease;
+	background-color: white;
+	border-radius: 4px;
+	height: 70vh;
+}

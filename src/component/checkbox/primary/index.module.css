@@ -1,0 +1,12 @@
+.containerCheckbox {
+    display: flex;
+    position: relative;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.containerCheckbox img {
+    size: 24px;
+    cursor: pointer;
+    transition: all .3s ease;
+}

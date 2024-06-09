@@ -1,0 +1,20 @@
+.containerSearch {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    transition: all .2s ease-in-out;
+}
+
+.containerSearch:hover {
+    border: 1px solid #2F80ED;
+}
+
+.input {
+    outline: 0;
+    border: 0;
+    width: 100%;
+    background-color: transparent;
+    margin-left: 10px;
+}

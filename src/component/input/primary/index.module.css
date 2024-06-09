@@ -1,0 +1,22 @@
+.containerInput {
+    display: flex;
+    border: 1px solid #828282;
+    border-radius: 4px;
+    width: 100%;
+    padding: 0 10px;
+    align-items: center;
+    transition: all 0.2s linear;
+}
+
+.containerInput:hover {
+    border: 1px solid #2F80ED;
+}
+
+.containerInput input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    color: black;
+    
+}

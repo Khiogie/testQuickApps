@@ -1,0 +1,19 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    border-right: 1px solid whitesmoke;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: auto;
+    width: 85vw;
+    flex-direction: column;
+}
