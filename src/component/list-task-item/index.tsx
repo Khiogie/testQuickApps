@@ -10,6 +10,7 @@ import transition from "react-element-popper/animations/transition";
 import opacity from "react-element-popper/animations/opacity";
 import { FontSize } from "@/styles/font";
 import moment from "moment";
+import useOutsideClick from "@/src/function/outside-click";
 
 interface IProps {
 	open?: boolean;
@@ -41,11 +42,17 @@ const TaskItem: React.FC<IProps> = ({
 	const [isMoreOptions, setIsMoreOptions] = useState(false);
 
 	const ref = useRef<HTMLDivElement>(null);
+	const deleteRef = useRef<HTMLDivElement>(null);
 	const inputRef = useRef(null);
 
 	const handleFilterOpening = () => {
 		setIsOpen((prev) => !prev);
 	};
+
+	useOutsideClick({
+		ref: deleteRef,
+		handler: () => setIsMoreOptions(false),
+	});
 
 	useEffect(function() {
 		if(data.date.length != 0) {
@@ -185,7 +192,7 @@ const TaskItem: React.FC<IProps> = ({
 							/>
 						</button>
 					</div>
-					<div className={styles.moreOptions}>
+					<div ref={deleteRef} className={styles.moreOptions}>
 						<img
 							onClick={handleMoreOptions}
 							src={"icons/more.svg"}
