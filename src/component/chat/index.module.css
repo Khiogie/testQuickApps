@@ -90,7 +90,6 @@
     display: flex;
     margin-top: 5px;
     width: 100%;
-    justify-content: end;
 }
 .bubbleChat {
     background-color: #FCEED3;
