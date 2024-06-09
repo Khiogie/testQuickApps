@@ -51,6 +51,7 @@ export function QuickInbox(props: Props) {
                         {dataInboxList.map((val: any) => {
                             return(
                                 <div 
+                                    key={val.name.toString()}
                                     className={styles.inboxListItem}
                                     onClick={() => handleClickMessage(val)}
                                 >

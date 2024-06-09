@@ -188,7 +188,9 @@ export function FloatingGroupButton () {
                                     zIndex: "9"
                                 }}
                             >
-                                <span >
+                                <span style={{
+                                    opacity: isOpenPopUp ? "0" : "1"
+                                }}>
                                     {event.name}
                                 </span>
                                 <div 

@@ -68,7 +68,9 @@ export function QuickTask(props: Props) {
             }}>
                 {dummyTaskList.map(function(event: any){
                     return (
-                        <TaskItem data={event}/>
+                        <div key={event.id}>
+                            <TaskItem data={event}/>
+                        </div>
                     )
                 })}
             </div>

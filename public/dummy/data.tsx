@@ -53,7 +53,7 @@ export const dummyTaskList = [
     time: "2 days left",
     date: "1623475109",
     task: "Closing off this case since this application has been cancelled. No one really undestand how this case could possibly be cancelled. The options and the documents within this document were totally a guaranteed for a success!",
-    isClosed: false,
+    isClosed: true,
   },
   {
     id: "2",
@@ -61,7 +61,7 @@ export const dummyTaskList = [
     time: "4 days left",
     date: "1623475109",
     task: "All Cases must include all payment transactions, all documents and forms filled. All converstations in comments and messages in channels and emails should be provided as well in.",
-    isClosed: true
+    isClosed: false
   },
   {
     id: "3",
@@ -70,5 +70,32 @@ export const dummyTaskList = [
     date: "",
     task: "",
     isClosed: false,
+  }
+]
+
+export const dummyChat = [
+  {
+    messageId: "1",
+    senderId: "3",
+    senderName: "Claren",
+    text: "No worries. It will be completed ASAP. I've asked him yesterday."
+  },
+  {
+    messageId: "2",
+    senderId: "2",
+    senderName: "Mary Hilda",
+    text: "Hellow Obaidullah, I will be your case advisor for case #0290290. I have assigned some homework for you to fill. Please keep up with the due dates. Should you have any questions, you can message me anytime. Thanks"
+  },
+  {
+    messageId: "3",
+    senderId: "3",
+    senderName: "Claren",
+    text: "Please contact May for questions regarding the case bcs she will be managing your forms form now on! Thanks Mary"
+  },
+  {
+    messageId: "4",
+    senderId: "2",
+    senderName: "Mary Hilda",
+    text: "Sure thing, Claren"
   }
 ]
