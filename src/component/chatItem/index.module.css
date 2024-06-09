@@ -1,0 +1,75 @@
+
+
+.senderName {
+    color: #E5A443;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.senderNameMe {
+    color: #8785FF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contentItemChat {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 15px 10px 10px 10px;
+}
+
+
+.contentBubbleChat {
+    display: flex;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.contentBubbleChat img {
+    width: 24px;
+    height: 24px;
+    margin: -5px 8px 5px 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.bubbleChat {
+    background-color: #FCEED3;
+    border-radius: 5px;
+    padding: 10px;
+    color: #4F4F4F;
+    max-width: 70%;
+    z-index: 1;
+}
+
+.bubbleChatMe {
+    background-color: #EEDCFF;
+    border-radius: 5px;
+    padding: 10px;
+    color: #4F4F4F;
+    max-width: 70%;
+    z-index: 1;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: flex-start;
+    border: 1px solid #E0E0E0;
+    background-color: white;
+    width: 126px;
+    border-radius: 5px;
+    top: 40px;
+}
+
+.menuItem span {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menuItem span:hover {
+    background-color: #E0E0E0;
+}

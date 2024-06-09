@@ -4,6 +4,7 @@ import { PrimaryButton } from '../button/primary';
 import { dummyChat } from '@/public/dummy/data';
 import { COLOR } from '@/styles/color';
 import { FontSize } from '@/styles/font';
+import { ChatItems } from '../chatItem';
 
 interface Props {
     onBack: any;
@@ -46,21 +47,14 @@ export function RenderChat(props: Props) {
             <div className={styles.contentChat}>
                 {dummyChat.map(function(e: any) {
                     return (
-                       <div className={styles.contentItemChat} style={{alignItems: e.senderName === mySenderName ? 'flex-end': "flex-start"}}>
-                            <span className={`${e.senderName === mySenderName ? styles.senderNameMe : styles.senderName}`}>
-                                {e.senderName}
-                            </span>
-                            <div className={styles.contentBubbleChat} style={{justifyContent: e.senderName === mySenderName ? "end" : "start"}} >
-                                <span className={`${e.senderName === mySenderName ? styles.bubbleChatMe : styles.bubbleChat}`}>
-                                    {e.text}
-                                </span>
-                            </div>
-                        </div>
+                       <ChatItems data={e}/>
                     )
                 })}
+                
             </div>
         )
     }
+    
 
     function renderBottomChat() {
         return (
@@ -83,6 +77,9 @@ export function RenderChat(props: Props) {
             {renderHeaderChat()}
             {renderBodyChat()}
             {renderBottomChat()}
+            <div className={styles.floatingInfo}>
+                New Message
+            </div>
         </div>
     )
 }

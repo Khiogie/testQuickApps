@@ -44,13 +44,21 @@
     color: #4F4F4F
 }
 
+.contentChat {
+    flex-direction: column;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    padding: 0 10px
+}
+
 .bottomContainer {
     display: flex;
     position: fixed;
     width: 100%;
-    bottom: 10px;
-    padding: 0 10px;
+    bottom: 0px;
+    padding: 0 20px 15px 20px;
     background-color: white;
+    z-index: 10;
 }
 
 .bottomContainer .innerContainer {
@@ -60,49 +68,16 @@
     width: 100%;
 }
 
-.contentChat {
-    flex-direction: column;
-    overflow-y: auto;
-    transition: all 0.3s ease;
-    height: 80%;
-}
-
-.senderName {
-    color: #E5A443;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.senderNameMe {
-    color: #8785FF;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.contentItemChat {
+.floatingInfo {
     display: flex;
-    flex-direction: column;
-    margin: 15px 10px 10px 10px;
-}
-
-
-.contentBubbleChat {
-    display: flex;
-    margin-top: 5px;
-    width: 100%;
-}
-.bubbleChat {
-    background-color: #FCEED3;
+    z-index: 99;
+    position: absolute;
+    bottom: 55px;
+    left: 40%;
+    background-color: #E9F3FF;
     border-radius: 5px;
-    padding: 10px;
-    color: #4F4F4F;
-    max-width: 70%
-}
-
-.bubbleChatMe {
-    background-color: #EEDCFF;
-    border-radius: 5px;
-    padding: 10px;
-    color: #4F4F4F;
-    max-width: 70%;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #2F80ED;
+    font-weight: bold;
 }
